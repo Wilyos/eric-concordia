@@ -3,9 +3,281 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eric</title>
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Garage Concordia</title>
 </head>
 <body>
-    
+
+  <nav class="navbar">
+    <a href="#" class="logo">Eric Concordia</a>
+    <div class="menu-icon" id="menu-icon">
+      <i class='bx bx-menu'></i>
+    </div>
+    <ul>
+      <li><a href="#home" data-i18n="nav_home">Home</a></li>
+      <li><a href="#about" data-i18n="nav_about">About</a></li>
+      <li><a href="#portfolio" data-i18n="nav_portfolio">Portfolio</a></li>
+      <li><a href="#service" data-i18n="nav_service">Service</a></li>
+      <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+    </ul>
+    <button id="lang-toggle" class="lang-btn">FR</button>
+  </nav>
+
+    <div class="bars-animation">
+            <div class="bar" style="--i:6;"></div>
+            <div class="bar" style="--i:5;"></div>
+            <div class="bar" style="--i:4;"></div>
+            <div class="bar" style="--i:3;"></div>
+            <div class="bar" style="--i:2;"></div>
+            <div class="bar" style="--i:1;"></div>
+    </div>
+
+    <section class="home" id="home">
+        <div class="home-info">
+            <h1 data-i18n="home_title">Garage Concordia</h1>
+            <h2>
+                <span data-i18n="home_we_are" class="static-span">We are</span>
+                <span style="--i:2" data-i18n="home_span1" data-text="Your car's best ally" class="animated-span">Your car's best ally</span>
+                <span style="--i:1" data-i18n="home_span2" data-text="Complete auto care services" class="animated-span">Complete auto care services</span>
+            </h2>
+            <p data-i18n="home_desc">We are a comprehensive auto workshop offering body work, painting, mechanical services, and car rentals. Your satisfaction is our priority.</p>
+            <div class="btn-sci">
+        <a href="#" class="btn" data-i18n="home_save_contact">Save Contact</a>
+        <div class="sci">
+          <a href="https://wa.me/590690543799" target="_blank" title="Enviar WhatsApp">
+            <i class='bx bxl-whatsapp' ></i>
+          </a>
+        </div>
+            </div>
+        </div>
+        <div class="home-img">
+            <div class="img-box">
+                <div class="img-item">
+                    <img src="/assets/interior.webp" alt="logo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="assets/carro.webp" alt="profile" />
+      </div>
+      <div class="about-content">
+        <h2 class="heading" data-i18n="about_title">About <span class="bg-gradient-1">Us</span></h2>
+        <p data-i18n="about_desc">
+          Garage Concordia is your trusted auto workshop, offering complete services including body work, professional painting, expert mechanical repairs, and car rentals. With years of experience, we guarantee quality and reliability in every service.
+        </p>
+        <a href="#contact">
+          <button class="btn" data-i18n="about_btn">Contact me</button>
+        </a>
+      </div>
+    </section>
+
+    <section id="portfolio" class="projects">
+  <h2 class="heading" data-i18n="projects_title">Our <span class="bg-gradient-1">Services</span></h2>
+      <div class="projects-box">
+        <div class="project-card">
+          <img src="/assets/pintura.jpg" alt="logo">
+          <h3 data-i18n="project1_title">Body Work & Painting</h3>
+          <p data-i18n="project1_desc">
+            Expert body work and professional painting services to restore your vehicle to its original beauty.
+          </p>
+        </div>
+        <div class="project-card">
+          <img src="/assets/mecanica.jpg" alt="eco">
+          <h3 data-i18n="project2_title">Mechanical Services</h3>
+          <p data-i18n="project2_desc">
+            Complete mechanical repairs and maintenance to keep your vehicle running smoothly and safely.
+          </p>
+        </div>
+        <div class="project-card">
+            <img src="/assets/renta.jpg" alt="solutions">
+            <h3 data-i18n="project3_title">Car Rentals</h3>
+            <p data-i18n="project3_desc">
+              Quality vehicles available for rent. Whether for business or leisure, we have the perfect car for you.
+            </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+  <h2 class="heading" data-i18n="services_title">Why Choose Us</h2>
+      <div class="services-container">
+          <div class="service-box">
+            <div class="service-info">
+                <i class='bx bxs-car'></i>
+        <h4 data-i18n="service1_title">Professional Experience</h4>
+        <p data-i18n="service1_desc">
+          Years of experience in the automotive industry with trained technicians and quality equipment.
+        </p>
+            </div>
+          </div>
+          <div class="service-box">
+            <div class="service-info">
+                <i class='bx bx-wrench' ></i>
+                <h4 data-i18n="service2_title">Complete Services</h4>
+                <p data-i18n="service2_desc">
+                  From body work and painting to mechanical repairs and car rentals, all in one place.
+                </p>
+            </div>
+          </div>
+           <div class="service-box">
+            <div class="service-info">
+                <i class='bx bx-check-circle'></i>
+                <h4 data-i18n="service3_title">Quality Guarantee</h4>
+                <p data-i18n="service3_desc">
+                  We guarantee quality work with attention to detail and customer satisfaction on every job.
+                </p>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+  <h2 class="heading" data-i18n="contact_title">Contact <span class="bg-gradient-1">Us</span></h2>
+  <div class="contact-content">
+    <div class="social-icons">
+      <p class="contact-intro" data-i18n="contact_intro">For more information, write to us</p>
+      <ul>
+        <li>
+          <a href="https://wa.me/590690543799" target="_blank" title="Send WhatsApp">
+            <i class='bx bxl-whatsapp' ></i>
+          </a>
+          <span class="tag-contact" data-i18n="contact_phone">+590 690 543799</span>
+        </li>
+      </ul>
+    </div>
+    <div class="contact-image">
+      <img src="assets/garage.webp" alt="Garage Concordia">
+    </div>
+  </div>
+    </section>
+
+    <footer class="footer">
+  <p class="copyright" data-i18n="footer_copy">&copy; Garage Concordia 2025 - Erick Concordia</p>
+    </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="script.js"></script>
+  <script>
+    //traslates const
+    const translations = {
+      en: {
+        nav_home: "Home",
+        nav_about: "About",
+        nav_portfolio: "Portfolio",
+        nav_service: "Service",
+        nav_contact: "Contact",
+        home_title: "Garage Concordia",
+        home_we_are: "We are",
+        home_span1: "Your car's best ally",
+        home_span2: "Complete auto care services",
+        home_desc: "We are a comprehensive auto workshop offering body work, painting, mechanical services, and car rentals. Your satisfaction is our priority.",
+        home_save_contact: "Save Contact",
+        about_title: "About <span class='bg-gradient-1'>Us</span>",
+        about_desc: "Garage Concordia is your trusted auto workshop, offering complete services including body work, professional painting, expert mechanical repairs, and car rentals. With years of experience, we guarantee quality and reliability in every service.",
+        about_btn: "Contact me",
+        projects_title: "Our <span class='bg-gradient-1'>Services</span>",
+        project1_title: "Body Work & Painting",
+        project1_desc: "Expert body work and professional painting services to restore your vehicle to its original beauty.",
+        project2_title: "Mechanical Services",
+        project2_desc: "Complete mechanical repairs and maintenance to keep your vehicle running smoothly and safely.",
+        project3_title: "Car Rentals",
+        project3_desc: "Quality vehicles available for rent. Whether for business or leisure, we have the perfect car for you.",
+        services_title: "Why Choose Us",
+        service1_title: "Professional Experience",
+        service1_desc: "Years of experience in the automotive industry with trained technicians and quality equipment.",
+        service2_title: "Complete Services",
+        service2_desc: "From body work and painting to mechanical repairs and car rentals, all in one place.",
+        service3_title: "Quality Guarantee",
+        service3_desc: "We guarantee quality work with attention to detail and customer satisfaction on every job.",
+        contact_title: "Contact <span class='bg-gradient-1'>Us</span>",
+        contact_intro: "For more information, write to us",
+        contact_phone: "+590 690 543799",
+        form_name: "Your Name",
+        form_email: "Your Email",
+        form_message: "Your Message",
+        form_send: "Send Message",
+        footer_copy: "© Garage Concordia 2025 - Erick Concordia"
+      },
+      fr: {
+        nav_home: "Accueil",
+        nav_about: "À propos",
+        nav_portfolio: "Portfolio",
+        nav_service: "Services",
+        nav_contact: "Contact",
+        home_title: "Garage Concordia",
+        home_we_are: "Nous sommes",
+        home_span1: "Le meilleur allié de votre voiture",
+        home_span2: "Services complets d'entretien automobile",
+        home_desc: "Nous sommes un atelier automobile complet offrant carrosserie, peinture, services mécaniques et location de voitures. Votre satisfaction est notre priorité.",
+        home_save_contact: "Enregistrer le contact",
+        about_title: "À propos de <span class='bg-gradient-1'>Nous</span>",
+        about_desc: "Garage Concordia est votre atelier automobile de confiance, offrant des services complets incluant carrosserie, peinture professionnelle, réparations mécaniques expertes et location de voitures. Avec des années d'expérience, nous garantissons qualité et fiabilité dans chaque service.",
+        about_btn: "Contactez-moi",
+        projects_title: "Nos <span class='bg-gradient-1'>Services</span>",
+        project1_title: "Carrosserie et Peinture",
+        project1_desc: "Carrosserie experte et services de peinture professionnelle pour restaurer votre véhicule à sa beauté d'origine.",
+        project2_title: "Services Mécaniques",
+        project2_desc: "Réparations mécaniques complètes et entretien pour maintenir votre véhicule en bon état de marche et en sécurité.",
+        project3_title: "Location de Voitures",
+        project3_desc: "Véhicules de qualité disponibles à la location. Que ce soit pour affaires ou loisirs, nous avons la voiture parfaite pour vous.",
+        services_title: "Pourquoi Nous Choisir",
+        service1_title: "Expérience Professionnelle",
+        service1_desc: "Des années d'expérience dans l'industrie automobile avec des techniciens qualifiés et des équipements de qualité.",
+        service2_title: "Services Complets",
+        service2_desc: "De la carrosserie et peinture aux réparations mécaniques et location de voitures, tout en un seul endroit.",
+        service3_title: "Garantie de Qualité",
+        service3_desc: "Nous garantissons un travail de qualité avec une attention aux détails et la satisfaction du client dans chaque travail.",
+        contact_title: "Contactez-nous <span class='bg-gradient-1'>Maintenant</span>",
+        contact_intro: "Pour plus d'informations, écrivez-nous",
+        contact_phone: "+590 690 543799",
+        form_name: "Votre Nom",
+        form_email: "Votre Email",
+        form_message: "Votre Message",
+        form_send: "Envoyer le Message",
+        footer_copy: "© Garage Concordia 2025 - Erick Concordia"
+      }
+    };
+
+    let currentLang = 'en';
+
+    function setLanguage(lang) {
+      currentLang = lang;
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (translations[lang][key]) {
+          // Si es un span animado, actualiza también el data-text
+          if (el.hasAttribute('data-text')) {
+            el.setAttribute('data-text', translations[lang][key]);
+            el.textContent = translations[lang][key];
+          } else if (key.includes('title') || key.includes('projects_title') || key.includes('about_title') || key.includes('contact_title')) {
+            el.innerHTML = translations[lang][key];
+          } else {
+            el.textContent = translations[lang][key];
+          }
+        }
+      });
+      // Traducción de placeholders
+      document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+        const key = el.getAttribute('data-i18n-placeholder');
+        if (translations[lang][key]) {
+          el.placeholder = translations[lang][key];
+        }
+      });
+      document.getElementById('lang-toggle').textContent = lang === 'en' ? 'EN' : 'FR';
+    }
+
+    document.getElementById('lang-toggle').addEventListener('click', function() {
+      setLanguage(currentLang === 'en' ? 'fr' : 'en');
+    });
+
+    // Inicializa en inglés
+    setLanguage('en');
+</script>
+
 </body>
 </html>
